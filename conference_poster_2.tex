@@ -247,7 +247,7 @@ proposed work plan:
 
 \begin{figure}
 \includegraphics[width=.9\linewidth]{nature-deep-learning/fig_1c}
-\caption{Multi-layer neural network [TODO ref.]}
+\caption{Multi-layer neural network \cite{lecun2015deep}}
 % c, The equations used for computing the forward pass in a neural net with two hidden layers and one output layer, each constituting a module through which one can backpropagate gradients. At each layer, we first compute the total input z to each unit, which is a weighted sum of the outputs of the units in the layer below. Then a non-linear function f(.) is applied to z to get the output of the unit. For simplicity, we have omitted bias terms. The non-linear functions used in neural networks include the rectified linear unit (ReLU) f(z) = max(0,z), commonly used in recent years, as well as the more conventional sigmoids, such as the hyberbolic tangent, f(z) = (exp(z) − exp(−z))/(exp(z) + exp(−z)) and logistic function logistic, f(z) = 1/(1 + exp(−z)).
 \end{figure}
 \end{column}
@@ -255,13 +255,13 @@ proposed work plan:
 
 \begin{figure}
 \includegraphics[width=.9\linewidth]{nature-deep-learning/fig_2}
-\caption{Convolutional Neural Network [TODO ref.]}
+\caption{Convolutional Neural Network \cite{lecun2015deep}}
 % The outputs (not the filters) of each layer (horizontally) of a typical convolutional network architecture applied to the image of a Samoyed dog (bottom left; and RGB (red, green, blue) inputs, bottom right). Each rectangular image is a feature map corresponding to the output for one of the learned features, detected at each of the image positions. Information flows bottom up, with lower-level features acting as oriented edge detectors, and a score is computed for each image class in output. ReLU, rectified linear unit.
 \end{figure}
 
 \begin{figure}
 \includegraphics[width=.6\linewidth]{nature-deep-learning/fig_5}
-\caption{Recurrent Neural Network [TODO ref.]}
+\caption{Recurrent Neural Network \cite{lecun2015deep}}
 % The artificial neurons (for example, hidden units grouped under node s with values st at time t) get inputs from other neurons at previous time steps (this is represented with the black square, representing a delay of one time step, on the left). In this way, a recurrent neural network can map an input sequence with elements xt into an output sequence with elements ot, with each ot depending on all the previous xt′ (for t′ ≤ t). The same parameters (matrices U,V,W) are used at each time step. Many other architectures are possible, including a variant in which the network can generate a sequence of outputs (for example, words), each of which is used as inputs for the next time step. The backpropagation algorithm (Fig. 1) can be directly applied to the computational graph of the unfolded network on the right, to compute the derivative of a total error (for example, the log-probability of generating the right sequence of outputs) with respect to all the states st and all the parameters.
 \end{figure}
 
