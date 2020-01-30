@@ -230,7 +230,10 @@ Imperial College London} % Institution(s)
 \begin{column}{.6\textwidth} % The first subdivided column within the first main column
 proposed work plan:
 \begin{itemize}
-	\item probability estimation of mutations migrating between populations
+	\item probability estimation of~mutations migrating between populations
+	\begin{itemize}
+	    \item using \textbf{deep neural networks} [Fig.~\ref{fig:1c-dl}]
+	\end{itemize}
 	
 	\item representation of~population genomic data
     \begin{itemize}
@@ -251,6 +254,7 @@ proposed work plan:
 \begin{figure}
 \includegraphics[width=.9\linewidth]{nature-deep-learning/fig_1c}
 \caption{Multi-layer neural network \cite{lecun2015deep}}
+\label{fig:1c-dl}
 % c, The equations used for computing the forward pass in a neural net with two hidden layers and one output layer, each constituting a module through which one can backpropagate gradients. At each layer, we first compute the total input z to each unit, which is a weighted sum of the outputs of the units in the layer below. Then a non-linear function f(.) is applied to z to get the output of the unit. For simplicity, we have omitted bias terms. The non-linear functions used in neural networks include the rectified linear unit (ReLU) f(z) = max(0,z), commonly used in recent years, as well as the more conventional sigmoids, such as the hyberbolic tangent, f(z) = (exp(z) − exp(−z))/(exp(z) + exp(−z)) and logistic function logistic, f(z) = 1/(1 + exp(−z)).
 \end{figure}
 \end{column}
